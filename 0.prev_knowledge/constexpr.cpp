@@ -96,6 +96,11 @@ int main(){
     int cin_val;
     std::cin >> cin_val;
     const int cin_const_val = cin_val;
+    
+    int arr1[const_val];//가능
+    // int arr2[cin_const_val];// 컴파일때 정해지는 상수가 아님
+    // int arr3[cin_val]; //상수가 아님
+
     // constexpr int cin_constexpr_val = cin_val; // 런타임에 결정되는 변수로는 constexpr 변수를를 할당 불가능; 
     std::cout<<"&cin_const_val           주소값 = "  << &cin_const_val<<std::endl;
     std::cout<<"runtime_val - 4          주소값 = "  << (&runtime_value -4) <<std::endl;
@@ -107,6 +112,7 @@ int main(){
     std::cout<<"runtime_val - 4          할당값 = "  << *(&runtime_value -4)<<std::endl;
     
     
+
     // cin_const_val = 20; // cin_const_val 자체는 변경이 불가능능
     // *(constexpr_val -2) = 1000; // const로 선언된 변수는 주소연산을 통한 값 또한 변경 불가
 
