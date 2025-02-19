@@ -113,7 +113,7 @@ int main(){
     
     
 
-    // cin_const_val = 20; // cin_const_val 자체는 변경이 불가능능
+    // cin_const_val = 20; // cin_const_val 자체는 변경이 불가능
     // *(constexpr_val -2) = 1000; // const로 선언된 변수는 주소연산을 통한 값 또한 변경 불가
 
     /*
