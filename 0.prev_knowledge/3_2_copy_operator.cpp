@@ -45,9 +45,9 @@ public:
 };
 
 
-void myfn(OperatorClass arg){
+void myfn(OperatorClass par){
 
-arg.change_value(0);
+par.change_value(0);
 
 }
 
@@ -140,9 +140,9 @@ Y의 int_ptr이 힙에 할당받은 힙의 메모리 주소는 상이하다.
 
 std::cout<<"------function-----"<<std::endl;
 
-OperatorClass parm(1000,2000);
-myfn(parm);
-parm.get_value();
+OperatorClass arg(1000,2000);
+myfn(arg);
+arg.get_value();
 /*
 함수의 인수를 얕은복사를 하는 문제는
 복사생성자를 통해 해결이 가능하다.
